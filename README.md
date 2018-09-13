@@ -1,4 +1,4 @@
 # danielcregg.github.io
 my webpage
 
-[danielcregg.github.io](danielcregg.github.io)
+[Link to page](danielcregg.github.io)
