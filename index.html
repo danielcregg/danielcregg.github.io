@@ -1,18 +1,245 @@
-<!doctype html>
-<title>Site Maintenance</title>
-<style>
-  body { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daniel Cregg - Software Developer Portfolio">
+    <title>Daniel Cregg | Software Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<article>
-    <h1>This page will be back soon!</h1>
-    <div>
-        <p>Sorry for the inconvenience but I am performing some site maintenance at the moment. If you need to you can always <a href="mailto:daniel.cregg@gmail.com">contact me</a>, otherwise this page will be back online shortly!</p>
-        <p>&mdash; Daniel</p>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .section p, .section ul {
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .skill-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            padding: 12px 24px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid white;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .project-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateX(5px);
+        }
+
+        .project-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #f8f9fa;
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .social-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="profile-image">👨‍💻</div>
+            <h1>Daniel Cregg</h1>
+            <p class="tagline">Software Developer | Tech Enthusiast | Problem Solver</p>
+            <div class="social-links">
+                <a href="https://github.com/danielcregg" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/danielcregg" target="_blank">LinkedIn</a>
+                <a href="mailto:contact@danielcregg.is-a.dev">Contact</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm Daniel Cregg, a passionate software developer with a keen interest in 
+                    building innovative solutions and exploring new technologies. I love turning complex 
+                    problems into simple, elegant solutions through clean and efficient code.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">RESTful APIs</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Featured Projects</h2>
+                <div class="projects">
+                    <div class="project-card">
+                        <h3>Project Alpha</h3>
+                        <p>A web application built with modern technologies to solve real-world problems.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project Beta</h3>
+                        <p>An innovative tool that improves productivity and streamlines workflows.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project Gamma</h3>
+                        <p>Open-source contribution to help the developer community grow.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>What I'm Learning</h2>
+                <p>
+                    Currently exploring cloud technologies, machine learning, and advanced web development 
+                    frameworks. Always eager to learn and adapt to new technologies in the ever-evolving 
+                    tech landscape.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Daniel Cregg. All rights reserved.</p>
+            <p>Hosted on <strong>danielcregg.is-a.dev</strong></p>
+        </footer>
     </div>
-</article>
+</body>
+</html>
+
